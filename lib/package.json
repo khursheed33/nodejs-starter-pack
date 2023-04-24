@@ -1,0 +1,36 @@
+{
+  "name": "nodejs-starter-pack",
+  "version": "1.0.0",
+  "description": "A Starter Pack for NodeJS",
+  "main": "lib/app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node lib/app.js",
+    "build": "mkdir -p build && uglifyjs src/*.js -o build/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khursheed33/nodejs-starter-pack.git"
+  },
+  "keywords": [
+    "starter",
+    "nodejs",
+    "base",
+    "nodejsbase"
+  ],
+  "author": "Khursheed Gaddi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khursheed33/nodejs-starter-pack/issues"
+  },
+  "homepage": "https://github.com/khursheed33/nodejs-starter-pack#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "uglify-js": "^3.17.4"
+  },
+  "dependencies": {
+    "https": "^1.0.0"
+  }
+}
