@@ -1,31 +1,35 @@
 {
-	"port": 8101,
-	"ssl":{
-		"key": "../../cert.pem",
-		"cert":"../../cert.pem",
-		"enabled": false,
-		"port": 8101
-	},
-	"mongoose": {
-		"uri": "mongodb://localhost:27017/db_name",
-		"options": {
-			"useNewUrlParser": true
-		}
-	},
-	"mongodb": {
-		"uri": "mongodb://localhost:27017",
-		"db_name": "db_name",
-		"options": {
-			"poolSize": 5,
-			"loggerLevel": "error",
-			"appname": "appname",
-			"useNewUrlParser": true,
-			"useUnifiedTopology": true
-		}
-	},
-	"auth": {
-		"expires": "2 hours",
-		"salt": "dummySalt"
-	},
-	"registration": true
+  "port": 8101,
+  "ssl": {
+    "key": "../../cert.pem",
+    "cert": "../../cert.pem",
+    "enabled": false,
+    "port": 8101
+  },
+  "mongoose": {
+    "uri": "mongodb://localhost:27017/db_name",
+    "user": "myusername",
+    "password": "mypassword",
+    "options": {
+      "useNewUrlParser": true,
+      "useUnifiedTopology": true
+    }
+  },
+  "mongodb": {
+    "uri": "mongodb://localhost:27017",
+    "db_name": "db_name",
+    "options": {
+      "poolSize": 5,
+      "loggerLevel": "error",
+      "appname": "appname",
+      "useNewUrlParser": true,
+      "useUnifiedTopology": true
+    }
+  },
+  "auth": {
+    "expires": "2 hours",
+    "salt": "dummySalt"
+  },
+  "registration": true,
+  "logging": false
 }
